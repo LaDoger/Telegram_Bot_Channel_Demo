@@ -1,10 +1,11 @@
 import os
+import dotenv
 import asyncio
 import telegram
-from dotenv import load_dotenv
+
 
 async def main():
-    load_dotenv()
+    dotenv.load_dotenv()
 
     # Telegram Bot Token created from https://t.me/BotFather
     TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
